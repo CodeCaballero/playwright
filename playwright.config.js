@@ -2,8 +2,9 @@ import { defineConfig, devices } from '@playwright/test';
 import { defineBddConfig } from 'playwright-bdd';
 
 const testDir = defineBddConfig({
-  paths: ['features/*.feature'],
-  require: ['steps/*.ts']
+  importTestFrom: 'tests/fixtures/fixtures.js',
+  paths: ['tests/features/*.feature'],
+  require: ['tests/steps/*.js']
 });
 /**
  * Read environment variables from file.
