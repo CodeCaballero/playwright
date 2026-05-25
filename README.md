@@ -7,7 +7,7 @@
 
 ## 📋 Overview
 
-This is a portfolio project demonstrating a robust, scalable **End-to-End (E2E) test automation framework** built with [Playwright](https://playwright.dev/). It showcases best practices in test automation, including the use of **TypeScript** for type safety, the **Gherkin** language for behavior-driven development (BDD), and a clean, maintainable project structure.
+As my first hands-on project with Playwright, this test automation framework implements core E2E testing concepts using TypeScript and Gherkin (BDD). While it's a learning journey, the structure follows professional standards to be scalable and maintainable
 
 
 ## ✨ Key Features
@@ -31,3 +31,19 @@ This is a portfolio project demonstrating a robust, scalable **End-to-End (E2E) 
 | **Git/GitHub** | Version control and project hosting |
 
 ## 📁 Project Structure
+├── pages/                 # Page Object Model (POM) classes defining UI selectors and page actions
+├── tests/                 # Automated test files (*.spec.ts) structured by modules or features
+├── node_modules/          # Project dependencies (generated after running npm install)
+├── .env                   # Local file for environment variable management (git-ignored)
+├── .gitignore             # Files and folders excluded from version control
+├── playwright.config.ts   # Global Playwright configuration (timeouts, browsers, reporters)
+├── package.json           # Node.js project metadata, dependencies, and custom scripts
+└── package-lock.json      # Exact dependency tree snapshot for reproducible builds
+
+💡 Key Best Practices Applied
+
+    Page Object Model (POM): Reduces code duplication by encapsulating UI elements and behaviors inside modular classes within the pages/ directory.
+
+    Web-First Assertions: Validations automatically wait asynchronously for specific conditions to be met, eliminating the need for flaky hardcoded sleeps (sleep).
+
+    Strict Typing: Developed completely over TypeScript to catch syntax, selector, and parameter errors during development before the code ever runs.
