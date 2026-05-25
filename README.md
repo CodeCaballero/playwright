@@ -55,10 +55,43 @@ playwright/<br>
 
 
 
-##💡 Key Best Practices Applied
+## 💡 Key Best Practices Applied
 
 - Page Object Model (POM): Reduces code duplication by encapsulating UI elements and behaviors inside modular classes within the pages/ directory.
 
 - Web-First Assertions: Validations automatically wait asynchronously for specific conditions to be met, eliminating the need for flaky hardcoded sleeps (sleep).
 
 - Strict Typing: Developed completely over TypeScript to catch syntax, selector, and parameter errors during development before the code ever runs.
+
+
+## 📦 Installation
+
+### Prerequisites
+
+1. **Node.js** (v18 or higher)
+   Download from [Node.js official website](https://nodejs.org/)
+
+2. **Git** (for cloning the repository)
+   Download from [Git official website](https://git-scm.com/)
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/playwright.git
+cd playwright
+
+# Install dependencies
+npm install
+
+# Install Playwright browsers
+npx playwright install
+
+# Generate feature files from existing tests (optional)
+npm run bddgen
+
+# Run tests with HTML reporter
+npm test
+
+# View test report
+npm run report
