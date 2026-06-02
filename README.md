@@ -7,7 +7,7 @@
 
 ## 📋 Overview
 
-As my first hands-on project with Playwright, this test automation framework implements core E2E testing concepts using TypeScript and Gherkin (BDD). While it's a learning journey, the structure follows professional standards to be scalable and maintainable
+As my first hands-on project with Playwright, this test automation framework implements core E2E testing concepts using TypeScript and Gherkin (BDD). The structure follows professional standards to be scalable and maintainable
 
 
 ## ✨ Key Features
@@ -57,11 +57,9 @@ playwright/<br>
 
 ## 💡 Key Best Practices Applied
 
-- Page Object Model (POM): Reduces code duplication by encapsulating UI elements and behaviors inside modular classes within the pages/ directory.
-
-- Web-First Assertions: Validations automatically wait asynchronously for specific conditions to be met, eliminating the need for flaky hardcoded sleeps (sleep).
-
-- Strict Typing: Developed completely over TypeScript to catch syntax, selector, and parameter errors during development before the code ever runs.
+- Page Object Model (POM) 
+- Web-First Assertions:
+- TypeScript 
 
 
 ## 📦 Installation
